@@ -1,7 +1,7 @@
 /* Header--top */
 .header__top {
   height: 75px;
-  background-color: #f8f8f8;
+  background-color: #fff;
   position: relative;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
 
 #trapezium {
   width: 35%;
-  border-top: 42px solid #f8f8f8;
+  border-top: 42px solid #fff;
   border-right: 60px solid transparent;
   position: absolute;
   bottom: -53%;

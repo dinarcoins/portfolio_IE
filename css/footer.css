@@ -38,10 +38,6 @@
   transform: translateY(-50%);
   padding-left: 150px;
   color: #072736;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
 }
 
 .ourTeam_footer_text {

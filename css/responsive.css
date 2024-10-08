@@ -28,6 +28,16 @@
   .contact__content {
     right: 0;
   }
+
+  .timeline {
+    flex-direction: column;
+  } 
+  .timeline-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
 }
 
 @media screen and (min-width: 1025px) {

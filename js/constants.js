@@ -79,4 +79,92 @@ export var MENU_NAV_ITEM = [
     text: "Contact for me",
     link: "contact-section",
   },
+  {
+    text: "Librari",
+    link: "library",
+  },
+];
+
+export var LIBRARI = [
+  { image: "" },
+  { image: "" },
+  { image: "" },
+  { image: "" },
+  { image: "" },
+  { image: "" },
+];
+
+export var timelineData = [
+  {
+    date: "09-23-2024",
+    title: "Coding Web UI Khoa Tieng Italia",
+    content:
+      "Xin Chào, mình là Nhân. Hiện tại project này thuộc về quyền quản lý của Công ty I&E Việt Nam. Team size: Only me (Front End Developer). HTML5, CSS3, Javascript, Tailwind. Picker Color Tool, Picker Pixel form Chrome, Font Awesome, ChatGPT, Github pilot, clip-path generator, borderTheme, Trong bài này mình đã sử dụng Lighthouse cuẩ Dev tools để chỉnh sửa 1 số phần của performance. Mọi thẻ image đều có alt, giá trị khác nhau. Sử dụng các thẻ header như h1,h2,h3 để tạo title cho từng section",
+    linkGithub: "https://github.com/dinarcoins/I-E-UI",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT00-IE/",
+    image: "./image/TT00-bg.png",
+  },
+  {
+    date: "07-10-2024",
+    title: "Coding Wev UI TT01 - Portfolio",
+    content:
+      "Trong web Ui này, nội dung xoay quanh giới thiệu về bản thân Dev và lộ trình đào tạo tại I&E Vietnam yêu quý. Kèm theo đó là thử thách về design khi mà đề bài ra một đề bài mở, dev sẽ phải tự setup",
+    linkGithub: "",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT01-IE/",
+    image: "./image/TT01-bg.png",
+  },
+  {
+    date: "10-10-2024",
+    title: "Coding TT02",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    linkGithub: "",
+    image: "./image/notyet-bg.png",
+  },
+  {
+    date: "2024",
+    title: "Coding TT03",
+    linkGithub: "",
+    image: "./image/notyet-bg.png",
+
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+  },
+  {
+    date: "2024",
+    title: "Coding TT04",
+    linkGithub: "",
+    image: "./image/notyet-bg.png",
+
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+  },
+  {
+    date: "2024",
+    title: "Coding TT05",
+
+    linkGithub: "",
+    image: "./image/notyet-bg.png",
+
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+  },
+  {
+    date: "2024",
+    title: "Coding TT06",
+    linkGithub: "",
+    image: "./image/notyet-bg.png",
+
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+  },
+  {
+    date: "2024",
+    title: "Coding TT07",
+    linkGithub: "",
+    image: "./image/notyet-bg.png",
+
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+  },
 ];

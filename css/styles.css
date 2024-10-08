@@ -11,10 +11,29 @@
   box-sizing: border-box;
 }
 
-:root {
-  cursor: none;
+.hidden {
+  visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttonCustom {
+  color: #fff;
+  background-color: #265bc5;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+}
+
+.buttonCustom:hover {
+  background-color: #fff;
+  color: #265bc5;
+  outline: solid 1px #265bc5;
+  /* transform: scale(1.1); */
 }
 
 a {
-  cursor: none;
+  text-decoration: none;
 }
