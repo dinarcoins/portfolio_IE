@@ -62,31 +62,3 @@ jQuery(document).ready(function ($) {
 //    element.classList.toggle("dark-mode");
 //  }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const slidesContainer = document.querySelector(".slides");
-  const slides = document.querySelectorAll(".slide");
-  const prevButton = document.querySelector(".prev");
-  const nextButton = document.querySelector(".next");
-  let currentIndex = 0;
-
-  prevButton.addEventListener("click", function () {
-    changeSlide(-1);
-  });
-
-  nextButton.addEventListener("click", function () {
-    changeSlide(1);
-  });
-
-  function changeSlide(step) {
-    currentIndex += step;
-
-    if (currentIndex >= slides.length) {
-      currentIndex = 0;
-    } else if (currentIndex < 0) {
-      currentIndex = slides.length - 1;
-    }
-
-    const offset = -currentIndex * 100;
-    slidesContainer.style.transform = `translateX(${offset}%)`;
-  }
-});

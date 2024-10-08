@@ -4,6 +4,7 @@ import {
   MENU_NAV_ITEM,
   LIBRARY,
   timelineData,
+  ABOUTME_LIST_IMAGE,
 } from "./constants.js";
 
 var skillsList = document.getElementById("skills-content");
@@ -121,13 +122,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var slide = document.createElement("div");
     var caption = document.createElement("p");
     var img = document.createElement("img");
-    
+
     slide.className = "slide-library";
-    
+
     caption.className = "slide-caption-library";
     caption.textContent = item.caption;
     img.src = item.image;
-    
+
     slide.appendChild(img);
     slide.appendChild(caption);
     slidesContainer.appendChild(slide);
@@ -157,5 +158,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     slidesContainer.style.transform =
       "translateX(" + -currentIndex * slideWidth + "%)";
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var slidesContainer = document.querySelector(".slides-aboutMe");
+  var prevButton = document.querySelector(".prev-aboutMe");
+  var nextButton = document.querySelector(".next-aboutMe");
+  var slides = document.querySelectorAll(".slide");
+  var currentIndex = 0;
+
+  ABOUTME_LIST_IMAGE.forEach(function (item) {
+      var slide = document.createElement("div");
+      var img = document.createElement("img");
+      
+      slide.className = "slide";
+      img.src = item.image;
+      img.alt = item.alt;
+
+      slide.appendChild(img);
+      slidesContainer.appendChild(slide);
+  });
+
+  prevButton.addEventListener("click", function () {
+      changeSlide(-1);
+  });
+
+  nextButton.addEventListener("click", function () {
+      changeSlide(1);
+  });
+
+  function changeSlide(step) {
+      currentIndex += step;
+
+      if (currentIndex >= slides.length) {
+          currentIndex = 0;
+      } else if (currentIndex < 0) {
+          currentIndex = slides.length - 1;
+      }
+
+      var offset = -currentIndex * 100;
+      slidesContainer.style.transform = `translateX(${offset}%)`;
   }
 });

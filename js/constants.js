@@ -86,16 +86,43 @@ export var MENU_NAV_ITEM = [
 ];
 
 export var LIBRARY = [
-  { image: "./image/library4.jpg", caption: "Cầu Rồng (DAD)" },
-  { image: "./image/library1.jpg", caption: "Cung Đình Huế" },
+  { image: "./image/library4.jpg", caption: "Rong Bridge (DAD)" },
+  { image: "./image/library1.jpg", caption: "Cung Dinh Hue" },
   { image: "./image/library6.jpg", caption: "Violak Pass (QN)" },
-  { image: "./image/library3.jpg", caption: "Quảng Bình Quan" },
-  { image: "./image/library2.jpg", caption: "Hà Tĩnh (TP)" },
+  { image: "./image/library3.jpg", caption: "Quang Binh Quan" },
+  { image: "./image/library2.jpg", caption: "Ha Tinh (Provine)" },
   { image: "./image/library5.jpg", caption: "Phong Nha - Ke Bang" },
-  { image: "./image/library7.jpg", caption: "Thanh Hoá (TP)" },
-  { image: "./image/library8.jpg", caption: "Chơ Vinh (NA)" },
-  { image: "./image/library9.jpg", caption: "Nhà Thờ (HNA)" },
+  { image: "./image/library7.jpg", caption: "Thanh Hoa (Provine)" },
+  { image: "./image/library8.jpg", caption: "Vinh Market (NA)" },
+  { image: "./image/library9.jpg", caption: "cathedral (HNA)" },
   { image: "./image/library10.jpg", caption: "Giao Thuy (ND)" },
+];
+
+export var ABOUTME_LIST_IMAGE = [
+  {
+    image: "./image/aboutme1.jpg",
+    alt: "aboutme1",
+  },
+  {
+    image: "./image/aboutme2.jpg",
+    alt: "aboutme2",
+  },
+  {
+    image: "./image/aboutme3.jpg",
+    alt: "aboutme3",
+  },
+  {
+    image: "./image/aboutme4.jpg",
+    alt: "aboutme4",
+  },
+  {
+    image: "./image/aboutme5.jpg",
+    alt: "aboutme5",
+  },
+  {
+    image: "./image/aboutme6.jpg",
+    alt: "aboutme6",
+  },
 ];
 
 export var timelineData = [

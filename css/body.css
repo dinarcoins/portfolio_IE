@@ -14,7 +14,7 @@ hr {
   overflow: hidden;
 }
 
-.slides {
+.slides-aboutMe {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -24,8 +24,8 @@ hr {
   box-sizing: border-box;
 }
 
-.prev,
-.next {
+.prev-aboutMe,
+.next-aboutMe {
   font-size: 30px;
   position: absolute;
   top: 50%;
@@ -35,15 +35,15 @@ hr {
   border: none;
 }
 
-.prev {
+.prev-aboutMe {
   left: 0;
 }
-.next {
+.next-aboutMe {
   right: 0;
 }
 
-.prev:focus,
-.next:focus {
+.prev-aboutMe:focus,
+.next-aboutMe:focus {
   outline: none;
 }
 /* ------------------- */
