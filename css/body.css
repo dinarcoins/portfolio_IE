@@ -46,6 +46,86 @@ hr {
 .next:focus {
   outline: none;
 }
+/* ------------------- */
+.slideshow-container-library {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slideshow-wrapper-library {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides-library {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-library {
+  flex: 0 0 33.33%;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.slide-library img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.slide-caption-library {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+button.prev-library,
+button.next-library {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+button.prev-library {
+  left: 10px;
+}
+
+button.next-library {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .slide-library {
+    flex: 0 0 33.33%;
+  }
+  .slide-library img {
+    object-fit: contain;
+  }
+}
 
 /* --------------------about us ----------------*/
 .about-me {
@@ -401,7 +481,7 @@ hr {
   opacity: 0.1;
 }
 
-.timeline-list{
+.timeline-list {
   position: relative;
   max-height: 550px;
   overflow-y: scroll;
@@ -433,6 +513,7 @@ hr {
   width: 100%;
   overflow-y: scroll;
   background-color: #fff;
+  padding: 15px 10px;
 }
 
 .timeline-content a {

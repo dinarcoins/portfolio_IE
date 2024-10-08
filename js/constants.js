@@ -85,13 +85,17 @@ export var MENU_NAV_ITEM = [
   },
 ];
 
-export var LIBRARI = [
-  { image: "" },
-  { image: "" },
-  { image: "" },
-  { image: "" },
-  { image: "" },
-  { image: "" },
+export var LIBRARY = [
+  { image: "./image/library4.jpg", caption: "Cầu Rồng (DAD)" },
+  { image: "./image/library1.jpg", caption: "Cung Đình Huế" },
+  { image: "./image/library6.jpg", caption: "Violak Pass (QN)" },
+  { image: "./image/library3.jpg", caption: "Quảng Bình Quan" },
+  { image: "./image/library2.jpg", caption: "Hà Tĩnh (TP)" },
+  { image: "./image/library5.jpg", caption: "Phong Nha - Ke Bang" },
+  { image: "./image/library7.jpg", caption: "Thanh Hoá (TP)" },
+  { image: "./image/library8.jpg", caption: "Chơ Vinh (NA)" },
+  { image: "./image/library9.jpg", caption: "Nhà Thờ (HNA)" },
+  { image: "./image/library10.jpg", caption: "Giao Thuy (ND)" },
 ];
 
 export var timelineData = [
@@ -109,7 +113,7 @@ export var timelineData = [
     title: "Coding Wev UI TT01 - Portfolio",
     content:
       "Trong web Ui này, nội dung xoay quanh giới thiệu về bản thân Dev và lộ trình đào tạo tại I&E Vietnam yêu quý. Kèm theo đó là thử thách về design khi mà đề bài ra một đề bài mở, dev sẽ phải tự setup",
-    linkGithub: "",
+    linkGithub: "https://github.com/dinarcoins/portfolio_IE",
     linkFTP: "https://nhanht.thuctap.inevn.com/TT01-IE/",
     image: "./image/TT01-bg.png",
   },
