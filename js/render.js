@@ -161,44 +161,44 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   var slidesContainer = document.querySelector(".slides-aboutMe");
   var prevButton = document.querySelector(".prev-aboutMe");
   var nextButton = document.querySelector(".next-aboutMe");
-  var slides = document.querySelectorAll(".slide");
   var currentIndex = 0;
 
   ABOUTME_LIST_IMAGE.forEach(function (item) {
-      var slide = document.createElement("div");
-      var img = document.createElement("img");
-      
-      slide.className = "slide";
-      img.src = item.image;
-      img.alt = item.alt;
+    var slide = document.createElement("div");
+    var img = document.createElement("img");
 
-      slide.appendChild(img);
-      slidesContainer.appendChild(slide);
+    slide.className = "slide";
+    img.src = item.image;
+    img.alt = item.alt;
+
+    slide.appendChild(img);
+    slidesContainer.appendChild(slide);
   });
 
+  var slides = document.querySelectorAll(".slide");
+
+  function changeSlide(step) {
+    currentIndex += step;
+
+    if (currentIndex >= slides.length) {
+      currentIndex = 0;
+    } else if (currentIndex < 0) {
+      currentIndex = slides.length - 1;
+    }
+
+    var offset = -currentIndex * 100;
+    slidesContainer.style.transform = `translateX(${offset}%)`;
+  }
+
   prevButton.addEventListener("click", function () {
-      changeSlide(-1);
+    changeSlide(-1);
   });
 
   nextButton.addEventListener("click", function () {
-      changeSlide(1);
+    changeSlide(1);
   });
-
-  function changeSlide(step) {
-      currentIndex += step;
-
-      if (currentIndex >= slides.length) {
-          currentIndex = 0;
-      } else if (currentIndex < 0) {
-          currentIndex = slides.length - 1;
-      }
-
-      var offset = -currentIndex * 100;
-      slidesContainer.style.transform = `translateX(${offset}%)`;
-  }
 });

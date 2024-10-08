@@ -805,10 +805,6 @@ body.offcanvas-active {
     display: block;
   }
 
-  .button-close {
-    /* z-index:10; */
-  }
-
   .btn-close {
     position: fixed;
     right: 20px;
