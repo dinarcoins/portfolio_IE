@@ -398,13 +398,15 @@ button.next-library {
   position: absolute;
   bottom: 10%;
   right: 0%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 150px;
   height: 38px;
   z-index: -1;
   opacity: 0.5;
+}
+
+.arrow-red img {
+  width: 100%;
+  height: 100%;
 }
 
 #timeline-project::after {
