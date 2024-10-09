@@ -155,6 +155,9 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesContainer.style.transform =
       "translateX(" + -currentIndex * slideWidth + "%)";
   }
+  setInterval(function () {
+    moveSlide(1);
+  }, 3000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -197,4 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
   nextButton.addEventListener("click", function () {
     changeSlide(1);
   });
+
+  setInterval(function () {
+    changeSlide(1);
+  }, 3000);
 });
