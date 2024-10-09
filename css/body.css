@@ -455,6 +455,7 @@ button.next-library {
   position: relative;
   transition: 0.5s;
   margin: 10px 0;
+  cursor: pointer;
 }
 
 .timeline ul li p {
