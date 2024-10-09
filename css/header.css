@@ -83,10 +83,11 @@
 
 .header__banner {
   background-image: url("../image/banner__header.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
-  padding-top: 40px;
   position: relative;
+  padding-bottom: 10%;
 }
 
 .header__menu {
