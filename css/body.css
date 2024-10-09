@@ -395,7 +395,6 @@ button.next-library {
 }
 
 .arrow-red {
-  background-image: url("../image/winding-arrow-red.webp");
   position: absolute;
   bottom: 10%;
   right: 0%;
