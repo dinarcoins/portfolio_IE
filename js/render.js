@@ -23,9 +23,7 @@ skillsList.innerHTML = SKILLLIST.map((item) => {
       </div>
       <div class="items__bottom">
         <h4>${item.skillName}</h4>
-        <ul>
-          <li>${item.textDecription}</li>
-        </ul>
+        <p>${item.textDecription}</p>
       </div>
     </div>
     `;
@@ -79,10 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
   timelineData.forEach((item, index) => {
     var li = document.createElement("li");
     li.className = "shadow-md rounded";
-    li.innerHTML = `<span class="block text-gray-500">${new Date(
-      item.date
-    ).toDateString()}</span>
-                      <h3 class="mt-2 text-lg font-semibold">${item.title}</h3>
+    li.innerHTML = `<span>${new Date(item.date).toDateString()}</span>
+                      <h3>${item.title}</h3>
                       <p>Click for more informations <i class="fa fa-arrow-right"></i> </p>
                       `;
     li.dataset.index = index;
