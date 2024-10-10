@@ -4,22 +4,7 @@
   .header__logo__item {
     right: 0;
   }
-  /* ABout us */
 
-  /* new */
-
-  .news {
-    height: 1600px;
-  }
-
-  .news button {
-    margin-top: 0;
-  }
-  /* user */
-
-  .user__logo img:last-child {
-    display: none;
-  }
   /* contact */
   .contact h2 {
     display: none;
@@ -75,11 +60,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-  .header__menu {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
   .header__logo__item {
     right: 5%;
   }
@@ -93,11 +73,6 @@
 @media screen and (max-width: 1200px) {
   .navbar-toggler {
     display: none;
-  }
-
-  .header__menu {
-    padding-left: 20%;
-    padding-right: 20%;
   }
 
   .header__logo__item {
@@ -131,6 +106,10 @@
 
   .navbar-collapse {
     height: 40%;
+  }
+
+  .my-project-content {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -350,6 +329,10 @@
   .contact__item {
     flex: 0 0 50%;
   }
+
+  .my-project-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -460,6 +443,10 @@
   a.cd-top {
     right: 10px;
   }
+
+  .my-project-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -498,10 +485,6 @@
     width: 100%;
     height: 450px;
   }
-  /* user */
-  .user {
-    height: 750px;
-  }
 
   .picture__item {
     padding-left: 10px;
@@ -533,7 +516,6 @@
     font-size: 18px;
   }
 
-  /* user */
   .picture__item h5 {
     font-size: 1rem;
   }

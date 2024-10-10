@@ -76,6 +76,10 @@ export var MENU_NAV_ITEM = [
     link: "timeline-project",
   },
   {
+    text: "Project",
+    link: "myProject",
+  },
+  {
     text: "Contact for me",
     link: "contact-section",
   },
@@ -198,4 +202,15 @@ export var timelineData = [
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
   },
+];
+
+export var MY_PROJECT = [
+  { text: "DF Landing Page", image: "./image/project1.png", alt: "project1" },
+  { text: "Portfolio Page", image: "./image/project2.png", alt: "project2" },
+  { text: "Travel Page", image: "./image/project3.png", alt: "project3" },
+  { text: "Add job function", image: "./image/project4.png", alt: "project4" },
+  { text: "Titan Landing page", image: "./image/project5.png", alt: "project5" },
+  { text: "Payment Michi", image: "./image/project6.png", alt: "project6" },
+  { text: "Plane UI", image: "./image/project7.png", alt: "project7" },
+  { text: "Happy Car Web", image: "./image/project8.png", alt: "project8" },
 ];

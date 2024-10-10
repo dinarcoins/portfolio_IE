@@ -5,6 +5,7 @@ import {
   LIBRARY,
   timelineData,
   ABOUTME_LIST_IMAGE,
+  MY_PROJECT,
 } from "./constants.js";
 
 var skillsList = document.getElementById("skills-content");
@@ -73,21 +74,39 @@ closeButton.addEventListener("click", function () {
   contentDisplay.classList.add("hidden");
 });
 
+document.addEventListener("click", function (e) {
+  if (!contentDisplay.contains(e.target) && !e.target.closest("li")) {
+    contentDisplay.classList.add("hidden");
+  }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
-  timelineData.forEach((item, index) => {
+  timelineData.forEach(function (item, index) {
     var li = document.createElement("li");
-    li.className = "shadow-md rounded";
+    li.className = "timeline-item shadow-md rounded opacity-0 translate-y-10";
     li.innerHTML = `<span>${new Date(item.date).toDateString()}</span>
-                      <h3>${item.title}</h3>
-                      <p>Click for more informations <i class="fa fa-arrow-right"></i> </p>
-                      `;
+                    <h3>${item.title}</h3>
+                    <p>Click for more informations <i class="fa fa-arrow-right"></i></p>`;
     li.dataset.index = index;
     timelineList.appendChild(li);
   });
 
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  var timelineItems = document.querySelectorAll(".timeline-item");
+  timelineItems.forEach(function (item) {
+    observer.observe(item);
+  });
+
   timelineList.addEventListener("click", function (e) {
     var target = e.target.closest("li");
-
     if (target) {
       var index = target.dataset.index;
       var selectedItem = timelineData[index];
@@ -131,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   var totalSlides = LIBRARY.length;
+
   var slideWidth = 100 / 3;
 
   var prevButton = document.querySelector(".prev-library");
@@ -178,19 +198,44 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesContainer.appendChild(slide);
   });
 
+  ABOUTME_LIST_IMAGE.forEach(function (item) {
+    var slide = document.createElement("div");
+    var img = document.createElement("img");
+
+    slide.className = "slide";
+    img.src = item.image;
+    img.alt = item.alt;
+
+    slide.appendChild(img);
+    slidesContainer.appendChild(slide);
+  });
+
   var slides = document.querySelectorAll(".slide");
 
   function changeSlide(step) {
     currentIndex += step;
 
-    if (currentIndex >= slides.length) {
+    if (currentIndex >= slides.length / 2) {
       currentIndex = 0;
+      slidesContainer.style.transition = "none";
+      slidesContainer.style.transform = `translateX(0%)`;
+      setTimeout(function () {
+        slidesContainer.style.transition = "transform 0.5s ease";
+        currentIndex++;
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }, 100);
     } else if (currentIndex < 0) {
-      currentIndex = slides.length - 1;
+      currentIndex = slides.length / 2 - 1;
+      slidesContainer.style.transition = "none";
+      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      setTimeout(function () {
+        slidesContainer.style.transition = "transform 0.5s ease";
+        currentIndex--;
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }, 100);
+    } else {
+      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-
-    var offset = -currentIndex * 100;
-    slidesContainer.style.transform = `translateX(${offset}%)`;
   }
 
   prevButton.addEventListener("click", function () {
@@ -204,4 +249,24 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(function () {
     changeSlide(1);
   }, 3000);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var containerProject = document.querySelector(".my-project-content");
+
+  MY_PROJECT.forEach(function (item) {
+    var project_items = document.createElement("div");
+    var project_items_modal = document.createElement("div");
+    var project_items_img = document.createElement("img");
+
+    project_items.className = "project-items";
+    project_items_modal.className = "project-items-modal";
+    project_items_img.className = "project-items_img";
+    project_items_modal.textContent = item.text;
+    project_items_img.src = item.image;
+
+    project_items.appendChild(project_items_modal);
+    project_items.appendChild(project_items_img);
+    containerProject.appendChild(project_items);
+  });
 });
