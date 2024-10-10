@@ -1,6 +1,6 @@
 export var SKILLLIST = [
   {
-    skillName: "1. HTMl5",
+    skillName: "HTMl5",
     level: "good",
     icon: "fa fa-html5",
     image: "image/1.png",
@@ -9,7 +9,7 @@ export var SKILLLIST = [
       "HTMl5 được bản thân tôi ứng dụng khá là chi tiết và đầy đủ, có thể nói tới các thẻ hiện có để support việc chia layout như : Header, Section, Nav, Footer,...",
   },
   {
-    skillName: "2. CSS3",
+    skillName: "CSS3",
     level: "good",
     icon: "fa fa-css3",
     image: "image/2.png",
@@ -18,7 +18,7 @@ export var SKILLLIST = [
       "Nắm bắt được 80% các thuộc tính, các sử dụng và cấu trúc của CSS3, ứng dụng tốt vào trong việc style cho website, tạo những hiệu ứng animations tốt, before, after,...",
   },
   {
-    skillName: "3. Javascript",
+    skillName: "Javascript",
     level: "medium",
     icon: "fab fa-js-square",
     image: "image/3.png",
@@ -27,7 +27,7 @@ export var SKILLLIST = [
       "Kiến thức cơ bản được bản thân học tập, trau dồi theo từng dự án nhỏ và lớn, tạo được những kết nối giữa DOM, sử dụng các function, array, object cho việc render data ra UI/UX,...",
   },
   {
-    skillName: "4. Support",
+    skillName: "Support",
     level: "good",
     icon: "fa fa-code",
     image: "image/4.png",
@@ -84,7 +84,7 @@ export var MENU_NAV_ITEM = [
     link: "contact-section",
   },
   {
-    text: "Librari",
+    text: "Library",
     link: "library",
   },
 ];

@@ -265,19 +265,6 @@ button.next-library {
   flex: 0 0 50%;
 }
 
-.skills-items:hover {
-  background-color: #265bc5;
-  transition: 1s;
-}
-
-.skills-items:hover h4,
-.skills-items:hover li,
-.skills-items:hover i,
-.skills-items:hover p {
-  color: #fff;
-  transition: 1s;
-}
-
 .items__top {
   display: flex;
   justify-content: space-between;

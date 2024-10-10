@@ -137,6 +137,10 @@
   flex: 3;
 }
 
+.header__title p {
+  font-size: 1.4rem;
+}
+
 .header__title h1 {
   font-size: 46px;
   margin-bottom: 24px;

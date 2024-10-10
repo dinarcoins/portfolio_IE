@@ -47,6 +47,19 @@
   .navbar-toggler {
     display: none;
   }
+
+  .skills-items:hover {
+    background-color: #265bc5;
+    transition: 1s;
+  }
+
+  .skills-items:hover h4,
+  .skills-items:hover li,
+  .skills-items:hover i,
+  .skills-items:hover p {
+    color: #fff;
+    transition: 1s;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -145,6 +158,10 @@
     font-size: 35px;
   }
 
+  .header__title p {
+    font-size: 1.2rem;
+  }
+
   .logo__item {
     margin-right: 0;
   }
@@ -180,20 +197,9 @@
     flex: 0 0 100%;
   }
 
-  /* news */
-  .news {
-    height: 2550px;
-  }
-
-  .news__main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .news__items {
-    width: 60%;
-    height: 510px;
+  .skills-items:nth-child(2),
+  .skills-items:nth-child(4) {
+    background-color: #daedff;
   }
 
   .vector__item {
@@ -241,6 +247,10 @@
 
   .header__title {
     flex: 1;
+  }
+
+  .header__title p {
+    font-size: 1rem;
   }
 
   .header__title h1 {
@@ -317,9 +327,7 @@
 
   .items__bottom p {
     font-size: 0.8rem;
-  }
-  .items__top img {
-    height: 70%;
+    margin-bottom: 0;
   }
 
   .items__bottom h4 {
@@ -336,10 +344,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  /* newss */
-  .news__title p {
-    display: block;
-  }
 
   #trapezium {
     width: 70%;
@@ -356,12 +360,31 @@
   .about-me__logo p {
     font-size: 16px;
   }
+
+  .contact__item {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .contact__item a {
+    font-size: 0.675rem;
+  }
+
+  .contact__item i {
+    font-size: 1.125rem;
+    margin: 0 10px 0 0;
+  }
+
 }
 
 @media screen and (max-width: 425px) {
   /* header */
   #trapezium {
     width: 75%;
+  }
+
+  .about-me__right p {
+    font-size: 0.875rem;
   }
 
   .logo {
@@ -447,6 +470,10 @@
   .my-project-content {
     grid-template-columns: 1fr;
   }
+
+  .menu__items a {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -495,27 +522,14 @@
   }
   /* contact */
 
-  .contact__content {
-    justify-content: center;
-  }
-
   .contact__item {
     flex: 0 0 100%;
     margin-left: 0;
-    margin-bottom: 10px;
+    display: flex;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* news */
-  .news__title {
-    padding: 0 10px;
-  }
-
-  .news__title h4 {
-    font-size: 18px;
-  }
-
   .picture__item h5 {
     font-size: 1rem;
   }
