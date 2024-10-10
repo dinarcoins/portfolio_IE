@@ -123,15 +123,6 @@ button.next-library {
   right: 10px;
 }
 
-@media (max-width: 768px) {
-  .slide-library {
-    flex: 0 0 33.33%;
-  }
-  .slide-library img {
-    object-fit: contain;
-  }
-}
-
 /* --------------------about us ----------------*/
 .about-me {
   position: relative;

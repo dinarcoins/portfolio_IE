@@ -6,6 +6,7 @@ import {
   timelineData,
   ABOUTME_LIST_IMAGE,
   MY_PROJECT,
+  CONTACT_DATA,
 } from "./constants.js";
 
 var skillsList = document.getElementById("skills-content");
@@ -14,6 +15,19 @@ var header__logo__item_menu = document.querySelector(
   ".header__logo__item-menu"
 );
 var menu__items_menuList = document.querySelector(".menu__items-menuList");
+var contact__content = document.querySelector(".contact__content");
+
+contact__content.innerHTML = CONTACT_DATA.map((item) => {
+  return `  
+  <div class="contact__item">
+  <i class="${item.icon}"></i>
+  <a target="${item.target ? item.target : ""}" href="${item.href}">${
+    item.text
+  }</a>
+</div>
+
+  `;
+}).join("");
 
 skillsList.innerHTML = SKILLLIST.map((item) => {
   return `

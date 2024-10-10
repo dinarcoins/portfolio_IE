@@ -341,6 +341,13 @@
   .my-project-content {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .slide-library {
+    flex: 0 0 33.33%;
+  }
+  .slide-library img {
+    object-fit: contain;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -473,6 +480,10 @@
 
   .menu__items a {
     font-size: 12px;
+  }
+  
+  .slide-library {
+    flex: 0 0 100%;
   }
 }
 
