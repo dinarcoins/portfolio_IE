@@ -157,7 +157,7 @@
   font-size: 25.5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   flex: 1;
 }
 

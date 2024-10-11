@@ -129,10 +129,8 @@
       <div class="container">
         <div class="about-me__content">
           <div class="about-me__left">
-            <div class="slideshow-container">
-              <div class="slides-aboutMe">
-                <!-- content aboutme -->
-              </div>
+            <div class="slideshow-container-aboutMe">
+              <div class="slides-container-aboutMe"></div>
               <button class="prev-aboutMe">
                 <i class="fas fa-chevron-circle-left"></i>
               </button>
@@ -140,7 +138,6 @@
                 <i class="fas fa-chevron-circle-right"></i>
               </button>
             </div>
-
             <div class="about-me__item">
               <div class="about-me__logo">
                 <div class="about-me__vector">
@@ -152,7 +149,7 @@
           </div>
           <div class="about-me__right">
             <a href="#">Dinar Coins</a>
-            <h2>Giới thiệu bản thân</h2>
+            <h2>Introduce about myself</h2>
             <p>
               Xin chào! Tôi là Nhân, một Front End Developer với kinh nghiệm
               thực tế trong việc phát triển ứng dụng web và giao diện người
@@ -185,12 +182,29 @@
       <h2 class="titleSection">Timeline project in I&E Vietnam</h2>
       <div class="timeline">
         <ul class="timeline-list"></ul>
-        <div class="timeline-content hidden" id="content-display">
-          <h3 id="content-title"></h3>
-          <img id="timeline-image" />
-          <p id="content-text"></p>
-          <a target="_blank" id="linkGithub">Link Github: </a>
-          <a target="_blank" id="linkFTP">Link FTP: </a>
+        <div class="timeline-content" id="content-display">
+          <h3 id="content-title">Coding Web UI Khoa Tieng Italia</h3>
+          <img
+            id="timeline-image"
+            class="timeline-image"
+            src="./image/TT00-bg.png"
+          />
+          <p id="content-text">
+            Xin Chào, mình là Nhân. Hiện tại project này thuộc về quyền quản lý
+            của Công ty I&E Việt Nam. Team size: Only me (Front End Developer).
+            HTML5, CSS3, Javascript, Tailwind. Picker Color Tool, Picker Pixel
+            form Chrome, Font Awesome, ChatGPT, Github pilot, clip-path
+            generator, borderTheme, Trong bài này mình đã sử dụng Lighthouse cuẩ
+            Dev tools để chỉnh sửa 1 số phần của performance. Mọi thẻ image đều
+            có alt, giá trị khác nhau. Sử dụng các thẻ header như h1,h2,h3 để
+            tạo title cho từng section
+          </p>
+          <a target="_blank" id="linkGithub"
+            >Link Github: https://github.com/dinarcoins/I-E-UI</a
+          >
+          <a target="_blank" id="linkFTP"
+            >Link FTP: https://nhanht.thuctap.inevn.com/TT00-IE/</a
+          >
           <button id="close-timeline-content" class="buttonCustom">
             Close
           </button>
@@ -200,13 +214,29 @@
     <section class="project" id="myProject">
       <div class="container">
         <h2 class="titleSection">My Project</h2>
-        <div class="my-project-content"></div>
+        <div class="project-content">
+          <div>
+            <ul class="">
+              <li>20+ project</li>
+              <li>100+ Client</li>
+              <li>2+ year</li>
+            </ul>
+          </div>
+          <div class="my-project-content"></div>
+          <div>
+            <ul>
+              <li>5+ country</li>
+              <li>10 certificate</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="ourTeam_footer">
+    <!-- <section class="ourTeam_footer">
       <div class="ourTeam_footer_text">I'm bring you the best products</div>
       <div class="ourTeam_footer_text2">I'm bring you the best products</div>
-    </section>
+    </section> -->
     <section id="library">
       <div class="container">
         <h2 class="titleSection">Time travel in Vietnam</h2>

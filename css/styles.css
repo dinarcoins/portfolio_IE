@@ -9,6 +9,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+}
+
+li {
+  list-style: none;
 }
 
 .hidden {
@@ -42,8 +47,35 @@ a {
   font-size: 2rem;
 }
 
+.zoomInOut {
+  animation: zoomImage 3s infinite;
+}
+
 @media screen and (max-width: 600px) {
   .titleSection {
     font-size: 1rem;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(190px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(190px) rotate(-360deg);
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes zoomImage {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
   }
 }

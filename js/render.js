@@ -133,8 +133,8 @@ document.addEventListener("DOMContentLoaded", function () {
       linkFTPContent.href = selectedItem.linkFTP;
 
       if (selectedItem.image !== "") {
-        var timeline_image = document.getElementById("timeline-image");
-        timeline_image.className = "timeline-image";
+        var timeline_image = document.querySelector(".timeline-image");
+        // timeline_image.className = "timeline-image";
         timeline_image.src = selectedItem.image;
         timeline_image.alt = selectedItem.title;
       }
@@ -145,6 +145,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   var slidesContainer = document.getElementById("slides-2");
+  var prevButton = document.querySelector(".prev-library");
+  var nextButton = document.querySelector(".next-library");
   var currentIndex = 0;
 
   LIBRARY.forEach(function (item) {
@@ -166,9 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var totalSlides = LIBRARY.length;
 
   var slideWidth = 100 / 3;
-
-  var prevButton = document.querySelector(".prev-library");
-  var nextButton = document.querySelector(".next-library");
 
   prevButton.addEventListener("click", function () {
     moveSlide(-1);
@@ -195,7 +194,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var slidesContainer = document.querySelector(".slides-aboutMe");
+  var containerProject = document.querySelector(".my-project-content");
+
+  MY_PROJECT.forEach(function (item, index) {
+    var childDiv = document.createElement("div");
+    var img = document.createElement("img");
+    img.alt = item.alt;
+    img.src = item.image;
+    childDiv.className = "project-items";
+
+    var delay = (index / ABOUTME_LIST_IMAGE.length) * 10;
+    childDiv.style.animationDelay = `-${delay}s`;
+    childDiv.appendChild(img);
+    containerProject.appendChild(childDiv);
+
+    containerProject.addEventListener("mouseenter", function () {
+      childDiv.classList.add("paused");
+    });
+
+    containerProject.addEventListener("mouseleave", function () {
+      childDiv.classList.remove("paused");
+    });
+
+    childDiv.addEventListener("mouseenter", function () {
+      childDiv.style.scale = "1.5";
+      childDiv.style.zIndex = "3";
+      childDiv.style.transitionDuration = "1s";
+    });
+
+    childDiv.addEventListener("mouseleave", function () {
+      childDiv.style.scale = "1";
+      childDiv.style.zIndex = "0";
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var slidesContainer = document.querySelector(".slides-container-aboutMe");
   var prevButton = document.querySelector(".prev-aboutMe");
   var nextButton = document.querySelector(".next-aboutMe");
   var currentIndex = 0;
@@ -212,75 +247,54 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesContainer.appendChild(slide);
   });
 
-  ABOUTME_LIST_IMAGE.forEach(function (item) {
-    var slide = document.createElement("div");
-    var img = document.createElement("img");
-
-    slide.className = "slide";
-    img.src = item.image;
-    img.alt = item.alt;
-
-    slide.appendChild(img);
-    slidesContainer.appendChild(slide);
-  });
-
   var slides = document.querySelectorAll(".slide");
+
+  var firstSlide = slides[0].cloneNode(true);
+  var lastSlide = slides[slides.length - 1].cloneNode(true);
+
+  slidesContainer.appendChild(firstSlide);
+  slidesContainer.insertBefore(lastSlide, slides[0]);
+
+  slides = document.querySelectorAll(".slide");
+
+  slidesContainer.style.transform = `translateX(-100%)`;
 
   function changeSlide(step) {
     currentIndex += step;
 
-    if (currentIndex >= slides.length / 2) {
-      currentIndex = 0;
-      slidesContainer.style.transition = "none";
-      slidesContainer.style.transform = `translateX(0%)`;
+    slidesContainer.style.transition = "transform 0.5s ease";
+    slidesContainer.style.transform = `translateX(${
+      -(currentIndex + 1) * 100
+    }%)`;
+
+    if (currentIndex < 0) {
       setTimeout(function () {
-        slidesContainer.style.transition = "transform 0.5s ease";
-        currentIndex++;
-        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-      }, 100);
-    } else if (currentIndex < 0) {
-      currentIndex = slides.length / 2 - 1;
-      slidesContainer.style.transition = "none";
-      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        slidesContainer.style.transition = "none";
+        currentIndex = ABOUTME_LIST_IMAGE.length - 1;
+        slidesContainer.style.transform = `translateX(${
+          -(currentIndex + 1) * 100
+        }%)`;
+      }, 500);
+    } else if (currentIndex >= ABOUTME_LIST_IMAGE.length) {
       setTimeout(function () {
-        slidesContainer.style.transition = "transform 0.5s ease";
-        currentIndex--;
-        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-      }, 100);
-    } else {
-      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        slidesContainer.style.transition = "none";
+        currentIndex = 0;
+        slidesContainer.style.transform = `translateX(-100%)`;
+      }, 500);
     }
   }
 
+  var autoRun = setInterval(function () {
+    changeSlide(1);
+  }, 3000);
+
   prevButton.addEventListener("click", function () {
+    clearInterval(autoRun);
     changeSlide(-1);
   });
 
   nextButton.addEventListener("click", function () {
+    clearInterval(autoRun);
     changeSlide(1);
-  });
-
-  setInterval(function () {
-    changeSlide(1);
-  }, 3000);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var containerProject = document.querySelector(".my-project-content");
-
-  MY_PROJECT.forEach(function (item) {
-    var project_items = document.createElement("div");
-    var project_items_modal = document.createElement("div");
-    var project_items_img = document.createElement("img");
-
-    project_items.className = "project-items";
-    project_items_modal.className = "project-items-modal";
-    project_items_img.className = "project-items_img";
-    project_items_modal.textContent = item.text;
-    project_items_img.src = item.image;
-
-    project_items.appendChild(project_items_modal);
-    project_items.appendChild(project_items_img);
-    containerProject.appendChild(project_items);
   });
 });
