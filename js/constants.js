@@ -149,12 +149,13 @@ export var timelineData = [
     image: "./image/TT01-bg.png",
   },
   {
-    date: "10-10-2024",
-    title: "Coding TT02",
+    date: "14-10-2024",
+    title: "Sudoku Game",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    linkGithub: "",
-    image: "./image/notyet-bg.png",
+      "Trong dự án này, Nhân được giao nhiệm vụ code một website game Sudoku bằng Html,Css,Js.Trong thử thách này thật sự là một điều khó và mới lạ đối với Nhân, nhưng bằng sự cố gắng học tập không ngừng thì Nhân đã hoàn thành theo đầy đủ yêu cầu cơ bản, nâng cao mà đã được giao.Hãy thưởng thức phần chơi Sudoku độc lạ của Nhân nhé.Cảm ơn",
+    linkGithub: "https://github.com/dinarcoins/miniGame-IE",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT02-IE/",
+    image: "./image/TT02-bg.png",
   },
   {
     date: "2024",
