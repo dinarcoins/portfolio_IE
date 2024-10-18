@@ -80,6 +80,10 @@ export var MENU_NAV_ITEM = [
     link: "myProject",
   },
   {
+    text: "All Project",
+    link: "",
+  },
+  {
     text: "Contact for me",
     link: "contact-section",
   },
@@ -149,7 +153,7 @@ export var timelineData = [
     image: "./image/TT01-bg.png",
   },
   {
-    date: "14-10-2024",
+    date: "10-14-2024",
     title: "Sudoku Game",
     content:
       "Trong dự án này, Nhân được giao nhiệm vụ code một website game Sudoku bằng Html,Css,Js.Trong thử thách này thật sự là một điều khó và mới lạ đối với Nhân, nhưng bằng sự cố gắng học tập không ngừng thì Nhân đã hoàn thành theo đầy đủ yêu cầu cơ bản, nâng cao mà đã được giao.Hãy thưởng thức phần chơi Sudoku độc lạ của Nhân nhé.Cảm ơn",
