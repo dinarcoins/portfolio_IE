@@ -80,10 +80,6 @@ export var MENU_NAV_ITEM = [
     link: "myProject",
   },
   {
-    text: "All Project",
-    link: "",
-  },
-  {
     text: "Contact for me",
     link: "contact-section",
   },
@@ -163,21 +159,22 @@ export var timelineData = [
   },
   {
     date: "2024",
-    title: "Coding TT03",
-    linkGithub: "",
-    image: "./image/notyet-bg.png",
-
+    title: "Coding UI TT03 - IEC",
+    linkGithub: "https://github.com/dinarcoins/ICE-IE",
+    image: "./image/TT03-IEC-bg.png",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT03-IE/IEC",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "Nhân được cho phép học tập, tìm hiểu, nghiên cứu thư viên CSS của công ty. Cho phép custom cao và tuỳ biến sâu với nhiều thuộc tính kết hợp với nhau.Hãy cùng xem Nhân đã xử lý như thế nào với những đường link dẫn view, code phía trên nhé",
   },
   {
     date: "2024",
-    title: "Coding TT04",
-    linkGithub: "",
-    image: "./image/notyet-bg.png",
+    title: "Coding UI TT03 - APCAL",
+    linkGithub: "https://github.com/dinarcoins/APCAL-IE",
+    image: "./image/TT03-APCAL-bg.png",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT03-IE/APCAL",
 
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "Cùng với IEC, APCAL cũng được sử dụng công nghệ thư viên Css của công ty, dự án này có vẻ được hoàn thiện cao hơn nhưng đó là điều tất yếu của 1 website đúng chuẩn Design, hãy cùng checking và cho Nhân những feedback nhé.",
   },
   {
     date: "2024",
