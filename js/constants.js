@@ -177,21 +177,20 @@ export var timelineData = [
       "Cùng với IEC, APCAL cũng được sử dụng công nghệ thư viên Css của công ty, dự án này có vẻ được hoàn thiện cao hơn nhưng đó là điều tất yếu của 1 website đúng chuẩn Design, hãy cùng checking và cho Nhân những feedback nhé.",
   },
   {
-    date: "2024",
-    title: "Coding TT05",
-
-    linkGithub: "",
-    image: "./image/notyet-bg.png",
-
+    date: "10-28-2024",
+    title: "Coding TT04",
+    linkGithub: "https://github.com/dinarcoins/TT04-IE",
+    image: "./image/TT03-APCAL-bg.png",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT04-IE/",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "Em là Nhân, trong thử thách TT04 này em sẽ được học, tiếp thu kiến thức và làm việc với Inevo, lấy ra dữ liệu cũng như bài viết, thao tác đối với người dùng mà không cần thông qua các công cụ gét data khác. Dưới đây là những link dẫn, file có liên quan tới TT04 này:",
   },
   {
-    date: "2024",
-    title: "Coding TT06",
-    linkGithub: "",
+    date: "11-05-2024",
+    title: "Coding TT05",
+    linkGithub: "https://github.com/dinarcoins/historyVietnam",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT05-IE/",
     image: "./image/notyet-bg.png",
-
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
   },
