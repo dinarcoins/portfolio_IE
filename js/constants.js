@@ -178,7 +178,7 @@ export var timelineData = [
   },
   {
     date: "10-28-2024",
-    title: "Coding TT04",
+    title: "Coding TT04 - Using INOVE for render data",
     linkGithub: "https://github.com/dinarcoins/TT04-IE",
     image: "./image/TT03-APCAL-bg.png",
     linkFTP: "https://nhanht.thuctap.inevn.com/TT04-IE/",
@@ -187,21 +187,21 @@ export var timelineData = [
   },
   {
     date: "11-05-2024",
-    title: "Coding TT05",
+    title: "Coding TT05 - Using INOVE for create VietNam History Website",
     linkGithub: "https://github.com/dinarcoins/historyVietnam",
     linkFTP: "https://nhanht.thuctap.inevn.com/TT05-IE/",
-    image: "./image/notyet-bg.png",
+    image: "./image/TT05-bg.png",
     content:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
   },
   {
-    date: "2024",
-    title: "Coding TT07",
-    linkGithub: "",
-    image: "./image/notyet-bg.png",
-
+    date: "11-18-2024",
+    title: "Coding TT06 - Admin panel INEVO",
+    linkGithub: "https://github.com/dinarcoins/TT06-IE",
+    image: "./image/TT06-bg.png",
+    linkFTP: "https://nhanht.thuctap.inevn.com/TT06-IE/",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "Trong thử thách này, em Nhân được tiếp xúc với Bảng Quản Trị từ INOVE, tạo giao diện và tìm hiểu, học hiểu cấu trúc cũng như trải nghiệm hướng sử dụng của người dùng đối với BQT từ INEVO",
   },
 ];
 
