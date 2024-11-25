@@ -192,7 +192,7 @@ export var timelineData = [
     linkFTP: "https://nhanht.thuctap.inevn.com/TT05-IE/",
     image: "./image/TT05-bg.png",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      "Có thể nói Lịch Sử Việt Nam là 1 trong những lĩnh vực kiến thức rất rộng, vì có nhiều mốc thời gian, sự kiện lịch sử và chiều dài văn hoá từ rất lâu.Trong thử thách này em Nhân sẽ chia nhỏ các mốc thời gian quan trong theo từng thời đại, sự kiện, nhân vật trong thời kỳ đó.Cùng xem là nội dung và UI của website này nhé, em Nhân xin cảm ơn.",
   },
   {
     date: "11-18-2024",
