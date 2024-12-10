@@ -40,7 +40,7 @@ export var SKILLLIST = [
 export var HEADER_LIST = [
   {
     icon: "fas fa-phone-alt",
-    text: "Contact",
+    text: "Liên hệ",
     content: "0876-215-779",
     link: "tel:0876215779",
   },
@@ -52,7 +52,7 @@ export var HEADER_LIST = [
   },
   {
     icon: "far fa-clock",
-    text: "Time work",
+    text: "Lịch làm việc",
     content: "Mon. - Fri. 08:30AM - 18PM",
     link: "#",
   },
@@ -60,31 +60,31 @@ export var HEADER_LIST = [
 
 export var MENU_NAV_ITEM = [
   {
-    text: "Introduce",
+    text: "Giới thiệu",
     link: "",
   },
   {
-    text: "About me",
+    text: "Bản thân",
     link: "aboutMe",
   },
   {
-    text: "Skills",
+    text: "Kỹ năng",
     link: "skillSection",
   },
   {
-    text: "Timeline I&E",
+    text: "Thời gian I&E",
     link: "timeline-project",
   },
   {
-    text: "Project",
+    text: "Dự án riêng",
     link: "myProject",
   },
   {
-    text: "Contact for me",
+    text: "Liên hệ",
     link: "contact-section",
   },
   {
-    text: "Library",
+    text: "Thư viện",
     link: "library",
   },
 ];
